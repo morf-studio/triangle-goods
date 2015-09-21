@@ -1,0 +1,155 @@
+
+/* ========================================== Body Text */
+
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: normal;
+    color: $text-color-default;
+	color: $text-color-primary;
+    background-color: $site-background-color;
+    
+	/* Better Font Rendering =========== */
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	// Baseline Grid Visible
+	background-image: linear-gradient(to bottom,#0ff 0,rgba(255,255,255,0)1px);
+	background-repeat: repeat-y;
+	background-size: 100% 1.5rem;
+	@media screen and (min-width:$tablet){
+		background-size: 100% 30px;
+//		20px x 1.5 = 30px
+	}
+}
+
+
+/* ========================================== Vertical Rhythm */
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+	margin-top:0;
+    margin-bottom: $spacing-unit;
+	@media screen and (min-width:$tablet){
+		margin-bottom:$spacing-unit-scaled;
+	}
+}
+
+/* ========================================== Headings */
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+	font-family:$heading-font-family;
+	//text-align:center;
+    font-weight: 800;
+	margin-top:0;
+}
+h4, h5, h6{
+	
+}
+
+
+article{
+	margin:0;
+	font-size:1rem;
+	@media screen and (min-width:$tablet){
+		font-size:20px;
+		font-size:1.25rem;
+	}
+}
+
+h1{
+	font-size:1.5em;
+	line-height:1;
+	@media screen and (min-width:$phablet) {
+		font-size:2em;
+		line-height:1.5;
+	}
+	@media screen and (min-width:$tablet) {
+		font-size:3em;
+		line-height:1;
+	}
+}
+h2{
+	font-weight:400;
+	font-size:1.25em;
+	line-height:1.25;
+	@media screen and (min-width:$tablet) {
+		font-size:2em;
+	}
+}
+h3{
+	font-size:1em;
+	text-transform:uppercase;
+	letter-spacing:.05em;
+	font-weight:800;
+	@media screen and (min-width:$tablet) {
+		//font-size:1.5em;
+	}
+	@media screen and (min-width:$desktop) {
+		//font-size:1.75em;
+	}
+}
+h4{
+	font-size:1em;
+	font-weight:600;
+}
+h5{
+	font-size:1em;
+	font-weight:600;
+}
+h6{
+	font-weight:800;
+	text-transform:uppercase;
+	letter-spacing:.1em;
+	//font-size:.9em;
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+	font-family:georgia,times,serif;
+    color: $grey;
+	color: $b60;
+    border-left: 4px solid $brand-color-primary;
+    padding-left: $spacing-unit / 2;
+    font-size: 1em;
+    text-align:left;
+	letter-spacing: .01em;
+    font-style: italic;
+	@media screen and (min-width:$tablet){
+		font-size:1.25em;
+		line-height:1.2;
+	}
+
+}
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+

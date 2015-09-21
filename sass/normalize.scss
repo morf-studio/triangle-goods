@@ -1,0 +1,36 @@
+/*
+ * Reset
+ */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;}
+audio,canvas,video {display: inline-block;*display: inline;*zoom: 1;}
+audio:not([controls]) {display: none;height: 0;}
+
+html {font-size: 100%; /* 1 */-webkit-text-size-adjust: 100%; /* 2 */-ms-text-size-adjust: 100%; /* 2 */}
+[hidden] {display: none;}
+
+html,button,input,select,textarea {font-family: sans-serif;}
+a:focus{outline: thin dotted;}
+
+//Base Styles
+a:active,a:hover {outline: 0;}
+b,strong {font-weight: bold;}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+small{font-size: 80%;}
+sub,sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+

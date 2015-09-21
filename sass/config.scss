@@ -1,0 +1,335 @@
+/* ==============================  SCALE */
+
+//Regulate & Set Base Font Size based on device pixel density.
+html{
+	font-size:16px;
+	font-size:1rem;
+}
+// EMS
+@function em($target, $context: 16) {
+    @return ($target / $context) * 1em;
+}
+
+// Scale Font Size for Em Calculations when font size is increased
+@function emscaled($target, $context: 20){
+	@return ($target / $context) * 1em;
+}
+
+@media screen and (min-width:43.75em){	
+	//@function em($target, $context: 20) {
+	//    @return ($target / $context) * 1em;
+	//}
+}
+	
+	
+
+	
+
+	
+$base-font-family: 'expo-serif-pro', Georgia, Cambria, Times, serif;
+$text-font-family: 'expo-serif-pro', Georgia, Cambria, Times, serif;
+$sans-font-family: 'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;
+$sans:'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;
+$heading-font-family:'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;
+$heading:'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;;
+
+$base-font-size:   1rem ;/*(16px)*/
+$scaled-font-size: $base-font-size * 1.25;
+$small-font-size:  $base-font-size * 0.875;
+
+$base-line-height: 1.5; /*(24px)*/
+$spacing-unit: 1.5rem; /*24px*/
+$spacing-unit-scaled: 30px;
+
+/* ============================== COLORS */
+
+//Text
+$text-color-default: #333;
+$text-color-primary:  rgba(0,0,0,.8);
+
+//Headings
+$heading-color-default:#000;
+$heading-color-primary:rgba(0,0,0,.95);
+
+//Backgrounds
+$site-background-color: #fdfdfd;
+
+//Buttons
+$button-text-color-default: #000;	
+$button-text-color-primary: rgba(0,0,0,.8);
+
+//Branding & Actions
+$brand-color-primary:      #43b557;
+	$link-color-primary: $brand-color-primary;
+	$button-color-primary: $brand-color-primary;
+
+$brand-color-secondary: #2a7ae2;
+	$link-color-secondary: $brand-color-secondary;
+	$button-color-secondary: $brand-color-secondary;
+	
+// Custom Definitions
+$black: #000;
+$white: #FFF;
+$grey: #888888;
+$grey-light: lighten($grey, 40%);
+$grey-dark:  darken($grey, 25%);
+
+// Black Translucent
+$b10:rgba(0,0,0,.1);
+$b20:rgba(0,0,0,.2);
+$b30:rgba(0,0,0,.3);
+$b40:rgba(0,0,0,.4);
+$b50:rgba(0,0,0,.5);
+$b60:rgba(0,0,0,.6);
+$b70:rgba(0,0,0,.7);
+$b80:rgba(0,0,0,.8);
+$b90:rgba(0,0,0,.9);
+
+// White Translucent
+$w10:rgba(255,255,255,.1);
+$w20:rgba(255,255,255,.2);
+$w30:rgba(255,255,255,.3);
+$w40:rgba(255,255,255,.4);
+$w50:rgba(255,255,255,.5);
+$w60:rgba(255,255,255,.6);
+$w70:rgba(255,255,255,.7);
+$w80:rgba(255,255,255,.8);
+$w90:rgba(255,255,255,.9);
+
+/* ============================== MEDIA */
+$phone:     (em(480));
+$phablet:   (em(600));
+$tablet:    (em(700));
+$laptop:    (em(1000));
+$desktop:   (em(1400));
+$jumbotron: (em(1800));
+
+
+@mixin mq($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
+/* ============================== MIXINS & EXTENDS */
+
+@mixin full-bleed-background{
+background-position:50% 50%;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+@mixin tenth-sec-trans{
+-webkit-transition-duration: .15s;
+-moz-transition-duration: .15s;
+-ms-transition-duration: .15s;
+-o-transition-duration: .15s;
+transition-duration: .15s;
+}
+
+@mixin quarter-sec-trans{
+-webkit-transition-duration: .25s;
+-moz-transition-duration: .25s;
+-ms-transition-duration: .25s;
+-o-transition-duration: .25s;
+transition-duration: .25s;
+}
+
+@mixin half-sec-trans{
+-webkit-transition-duration: .5s;
+-moz-transition-duration: .5s;
+-ms-transition-duration: .5s;
+-o-transition-duration: .5s;
+transition-duration: .5s;
+}
+
+@mixin circle {
+-webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	 -o-border-radius: 50%;
+	    border-radius: 50%;
+}
+@mixin round-corners-1em {
+	-webkit-border-radius: 1em;
+	   -moz-border-radius: 1em;
+		-ms-border-radius: 1em;
+		 -o-border-radius: 1em;
+		    border-radius: 1em;
+}
+
+@mixin drop-shadow{
+-webkit-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5);
+   -moz-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5);
+    -ms-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5);
+     -o-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5);
+        box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5);
+}
+
+
+
+//Layout Variables
+
+/**
+ * Clearfix
+ */
+%clearfix {
+    &:before, &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+%max-width-content-block{
+	max-width:(em(700));
+	margin-left: auto;
+	margin-right: auto;
+	width:90%;
+	padding-left:5%;
+	padding-right:5%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+%visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+	//visibility:hidden;
+	:active, :focus{
+	    clip: auto;
+	    height: auto;
+	    margin: 0;
+	    overflow: visible;
+	    position: static;
+	    width: auto;
+	}
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
