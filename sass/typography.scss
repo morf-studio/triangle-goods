@@ -49,8 +49,17 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top:0;
 }
 
+h1{
+	font-size:4em;
+}
 h2, .product-store-display{
+	font-size:2em;
 	text-transform:uppercase;
+}
+.product-store-display{
+	font-size:1.25em;
+	font-weight:700;
+	letter-spacing:.1em;
 }
 
 

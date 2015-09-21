@@ -1,15 +1,69 @@
-header.site-header{
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	padding:$spacing-unit;
+/* =========================================   CLEARS */
+header, footer, section, div, aside{
+	@extend %clearfix;
 }
 
-footer.product-info-display{
+/* =========================================   HEADER & FOOTER */
+.logo,.wordmark,.toggle{
 	position:fixed;
-	bottom:0;
-	left:0;
-	right:0;
-	padding:$spacing-unit;
+	top:0;
+	padding:$spacing-unit/2;
 }
+div.logo{
+	left:0;
+	width:2em;
+	z-index:3
+}
+div.wordmark{
+	left:2em;
+	z-index:1;
+}
+div.toggle{
+	right:0;
+	z-index:3;
+}
+
+footer#product-info-display{
+	position:fixed;
+	bottom:$spacing-unit/2;
+	left:$spacing-unit/2;
+	right:$spacing-unit/2;
+	padding:$spacing-unit/2;
+	background-color:$white;
+	z-index:3;
+	.product-details{
+		float:left;
+		h2,p{
+			margin-bottom:0;
+		}
+
+	}
+	.buy-now{
+		float:right;
+	}
+}
+
+
+/* =========================================   PRODUCT LIST */
+ul#products{
+	margin:0;
+	padding:100px 0 0 0;
+	z-index:2;
+	position:relative;
+	list-style:none;
+}
+li.product{
+	margin:0;
+	padding:0;
+	height:100vh;
+	div.product-image{
+		height:100%;
+		width:100%;
+		//background:linear-gradient (0, blue, red);
+		@include full-bleed-background;
+	}		
+}
+div.product-meta{
+	display:none;
+}
+
