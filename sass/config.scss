@@ -10,11 +10,10 @@ html{
     @return ($target / $context) * 1em;
 }
 	
-$base-font-family: 'expo-serif-pro', Georgia, Cambria, Times, serif;
-$text-font-family: 'expo-serif-pro', Georgia, Cambria, Times, serif;
-$sans-font-family: 'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;
-$sans:$sans-font-family;
-$heading-font-family:$sans;
+$base-font-family: "futura-pt", Helvetica-Neue, Helvetica, sans-serif;
+$text-font-family: $base-font-family;
+$sans-font-family: $base-font-family;
+
 
 
 $base-font-size:   1rem ;/*(16px)*/

@@ -16,13 +16,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	
 	// Baseline Grid Visible
-	background-image: linear-gradient(to bottom,#0ff 0,rgba(255,255,255,0)1px);
-	background-repeat: repeat-y;
-	background-size: 100% 1.5rem;
-	@media screen and (min-width:$tablet){
-		background-size: 100% 30px;
-//		20px x 1.5 = 30px
-	}
+	//background-image: linear-gradient(to bottom,#0ff 0,rgba(255,255,255,0)1px);
+	//background-repeat: repeat-y;
+	//background-size: 100% 1.5rem;
 }
 
 
@@ -49,9 +45,12 @@ ul, ol, dl, figure,
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-	font-family:$heading-font-family;
-	//text-align:center;
-    font-weight: 800;
+    font-weight: 700;
 	margin-top:0;
 }
+
+h2, .product-store-display{
+	text-transform:uppercase;
+}
+
 

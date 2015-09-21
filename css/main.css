@@ -178,7 +178,7 @@ html {
     page-break-after: avoid; } }
 /* ========================================== Body Text */
 body {
-  font-family: "expo-serif-pro", Georgia, Cambria, Times, serif;
+  font-family: "futura-pt", Helvetica-Neue, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: normal;
@@ -188,13 +188,7 @@ body {
   /* Better Font Rendering =========== */
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to bottom, #0ff 0, rgba(255, 255, 255, 0) 1px);
-  background-repeat: repeat-y;
-  background-size: 100% 1.5rem; }
-  @media screen and (min-width: 43.75em) {
-    body {
-      background-size: 100% 30px; } }
+  -moz-osx-font-smoothing: grayscale; }
 
 /* ========================================== Vertical Rhythm */
 /**
@@ -216,6 +210,8 @@ ul, ol, dl, figure {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova-alt-condensed", Helvetica-Neue, Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   margin-top: 0; }
+
+h2, .product-store-display {
+  text-transform: uppercase; }
