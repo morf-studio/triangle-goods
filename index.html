@@ -12,6 +12,22 @@
 
 </head>
 <body>
+
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-arrow" viewBox="0 0 1024 1024">
+  <title>arrow</title>
+  <path class="path1" d="M957.156 512c0 0 0-1.422 0-1.422 0-5.689-2.844-11.378-7.111-15.644-1.422-1.422 0-2.844-1.422-4.267s-2.844 0-4.267-1.422c0 0-1.422-1.422-1.422-1.422l-345.6-317.156c-12.8-12.8-31.289-12.8-44.089 0s-12.8 31.289 0 44.089l291.556 264.533h-746.667c-17.067 0-31.289 14.222-31.289 31.289s14.222 31.289 31.289 31.289h746.667l-291.556 267.378c-12.8 12.8-12.8 31.289 0 44.089s31.289 12.8 44.089 0l348.444-317.156c0 0 1.422 0 1.422 0s1.422 0 1.422 0c0 0 0-1.422 0-1.422 4.267-5.689 7.111-11.378 8.533-19.911 0-1.422 0-1.422 0-2.844 0 0 0 0 0 0s0 0 0 0z"></path>
+</symbol>
+<symbol id="icon-triangle" viewBox="0 0 1024 1024">
+  <title>triangle</title>
+  <path class="path1" d="M27.022 945.778l486.4-841.956 486.4 841.956z"></path>
+</symbol>
+</defs>
+</svg>
+
+
+
   <!-- <h1>∆ Goods</h1> -->
 
 <!-- <div class="clearfix header"> -->
@@ -23,23 +39,35 @@
 
 
 <div class="logo">
-    <h1 class="triangle"> <img src="svg/triangle.svg" alt=""> </h1>  
+    <h1 class="triangle"> 
+      <a href="#">
+          <svg class="icon-triangle"> 
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-triangle"> </use>  
+          </svg> 
+      </a> 
+    </h1>  
 </div>
 <div class="wordmark">
-    <h1 class="wordmark"> Goods </h1>
+    <h1> Goods </h1>
 </div>
 
-<div class="toggle"> Menu </div>
+<div class="toggle"> 
+  Menu 
+
+</div>
 
 
 <footer id="product-info-display">
     <div class="product-details">
-      <h2 class="product-name-display"> <a href="#product-link-url" class="product-link-display"> Product Name </a> </h2>
+      <h2 class="product-name-display"> <a href="#product-link-url" class="product-link-permalink"> Product Name </a> </h2>
       <p class="product-store-display"> <a href="product-store-link-display"> Store </a> </p>
     </div>
     <div class="buy-now">
-      <a href="#product-link-url" class="product-link-display">
-        <img src="svg/arrow.svg" alt="">
+      <a href="#product-link-url" class="product-link-button">
+      Buy
+       <!--  <svg class="icon-arrow"> 
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"> </use>  
+        </svg> -->
       </a>
     </div>
 </footer>

@@ -9,19 +9,38 @@ header, footer, section, div, aside{
 	top:0;
 	padding:$spacing-unit/2;
 }
+h1{
+		line-height:1;
+	}
 div.logo{
 	left:0;
-	width:2em;
+	width:1.5em;
 	z-index:3
 }
 div.wordmark{
-	left:2em;
+	left:4em;
 	z-index:1;
 }
 div.toggle{
 	right:0;
 	z-index:3;
+	width:2em;
+	height:2em;
+	color:$white;
+	margin:$spacing-unit;
+	background-color:$black;
+	@include circle;
 }
+
+svg.icon-triangle{
+	width:1em;
+	height:1em;
+}
+svg.icon-arrow{
+	width:1em;
+	height:1em;
+}
+
 
 footer#product-info-display{
 	position:fixed;
@@ -40,6 +59,19 @@ footer#product-info-display{
 	}
 	.buy-now{
 		float:right;
+		//width:100px;
+		
+		line-height:1;
+	}
+	.product-link-button{
+		display:block;
+		color:$white;
+		background-color:$black;
+		width:4em;
+		height:4em;
+		line-height:4em;
+		text-align:center;
+		text-transform: uppercase;
 	}
 }
 
