@@ -29,9 +29,9 @@ html{
 $base-font-family: 'expo-serif-pro', Georgia, Cambria, Times, serif;
 $text-font-family: 'expo-serif-pro', Georgia, Cambria, Times, serif;
 $sans-font-family: 'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;
-$sans:'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;
-$heading-font-family:'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;
-$heading:'proxima-nova-alt-condensed', Helvetica-Neue, Helvetica, Arial, sans-serif;;
+$sans:$sans-font-family;
+$heading-font-family:$sans;
+
 
 $base-font-size:   1rem ;/*(16px)*/
 $scaled-font-size: $base-font-size * 1.25;
@@ -120,11 +120,11 @@ background-repeat:no-repeat;
 }
 
 @mixin tenth-sec-trans{
--webkit-transition-duration: .15s;
--moz-transition-duration: .15s;
--ms-transition-duration: .15s;
--o-transition-duration: .15s;
-transition-duration: .15s;
+-webkit-transition-duration: .10s;
+-moz-transition-duration: .10s;
+-ms-transition-duration: .10s;
+-o-transition-duration: .10s;
+transition-duration: .10s;
 }
 
 @mixin quarter-sec-trans{
@@ -182,23 +182,6 @@ transition-duration: .5s;
 }
 
 
-%max-width-content-block{
-	max-width:(em(700));
-	margin-left: auto;
-	margin-right: auto;
-	width:90%;
-	padding-left:5%;
-	padding-right:5%;
-}
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -217,11 +200,10 @@ transition-duration: .5s;
     height: 150%;
 }
 
-.hidden {
+%hidden {
     display: none !important;
     visibility: hidden;
 }
-
 
 %visuallyhidden {
     border: 0;
