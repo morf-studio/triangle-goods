@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('.product').each(function () {            
             if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
                 
-                
+
 
                 $('#product-info-display').html($(this).find('.product-info').html()); //or any other way you want to get the desc
                 // the second part above is the invisible info container in each div.
@@ -18,6 +18,13 @@ $(document).ready(function () {
     });
     
     $(window).trigger('scroll'); // init the value
+
+    $(".toggle").click(function(){
+        $("#about").toggleClass("open");
+        $(this).toggleClass("about-open");
+        //$(".logo").toggleClass("about-open");
+
+    });
 
 });
 
