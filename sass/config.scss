@@ -1,10 +1,6 @@
 /* ==============================  SCALE */
 
-//Regulate & Set Base Font Size based on device pixel density.
-html{
-	font-size:16px;
-	font-size:1rem;
-}
+
 // EMS
 @function em($target, $context: 16) {
     @return ($target / $context) * 1em;
@@ -15,14 +11,15 @@ $text-font-family: $base-font-family;
 $sans-font-family: $base-font-family;
 
 
-
 $base-font-size: 1rem;/*(16px)*/
-$scaled-font-size: $base-font-size * 1.25;
-$small-font-size:  $base-font-size * 0.875;
+//$scaled-font-size: $base-font-size * 1.25;
+$small-font-size: 0.75rem;
 
-$base-line-height: 1.5; /*(24px)*/
-$spacing-unit: 1.5rem; /*24px*/
-$spacing-unit-scaled: 30px;
+
+
+$size:1em;
+$line-height: 1.5em; /*(24px)*/
+$space:1.5em;
 
 /* ============================== COLORS */
 
@@ -80,19 +77,19 @@ $w80:rgba(255,255,255,.8);
 $w90:rgba(255,255,255,.9);
 
 /* ============================== MEDIA */
-$phone:     (em(480));
-$phablet:   (em(600));
-$tablet:    (em(700));
-$laptop:    (em(1000));
-$desktop:   (em(1400));
-$jumbotron: (em(1800));
+//$phone:     (em(480));
+//$phablet:   (em(600));
+//$tablet:    (em(700));
+//$laptop:    (em(1000));
+//$desktop:   (em(1400));
+//$jumbotron: (em(1800));
 
 
-@mixin mq($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
-}
+//@mixin mq($device) {
+//    @media screen and (min-width: $device) {
+//        @content;
+//    }
+//}
 
 /* ============================== MIXINS & EXTENDS */
 

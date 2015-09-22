@@ -3,11 +3,11 @@ header, footer, section, div, aside{
 	@extend %clearfix;
 }
 
-/* =========================================   HEADER & FOOTER */
+/* =========================================   HEADER  */
 .logo,.wordmark,.toggle{
 	position:fixed;
 	top:0;
-	padding:$spacing-unit/2;
+	
 }
 h1{
 		line-height:1;
@@ -15,63 +15,67 @@ h1{
 div.logo{
 	left:0;
 	width:1.5em;
-	z-index:3
+	z-index:3;
+	padding:$space/2;
 }
 div.wordmark{
 	left:4em;
 	z-index:1;
+	padding:$space/2;
 }
 div.toggle{
 	right:0;
 	z-index:3;
-	width:2em;
-	height:2em;
+	width:$space*2;
+	height:$space*2;
+	line-height:$line-height*2;
 	color:$white;
-	margin:$spacing-unit;
+	margin:$space/2;
 	background-color:$black;
+	text-align:center;
 	@include circle;
+	span{
+		font-size:$small-font-size;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
 }
 
 svg.icon-triangle{
 	width:1em;
 	height:1em;
 }
-svg.icon-arrow{
-	width:1em;
-	height:1em;
-}
 
-
+/* =========================================   PRODUCT INFO BAR */
 footer#product-info-display{
 	position:fixed;
-	bottom:$spacing-unit/2;
-	left:$spacing-unit/2;
-	right:$spacing-unit/2;
-	padding:$spacing-unit/2;
+	bottom:$space/2;
+	left:$space/2;
+	right:$space/2;
+	padding:$space/2;
 	background-color:$white;
 	z-index:3;
 	.product-details{
 		float:left;
-		h2,p{
-			margin-bottom:0;
-		}
-
 	}
 	.buy-now{
 		float:right;
-		//width:100px;
-		
 		line-height:1;
+		background-color:$black;
+		width:$space*2;
+		height:$space*2;
+		line-height:$line-height*2;
 	}
 	.product-link-button{
 		display:block;
 		color:$white;
-		background-color:$black;
-		width:4em;
-		height:4em;
-		line-height:4em;
+		width:100%;
+		height:100%;		
 		text-align:center;
 		text-transform: uppercase;
+		letter-spacing: .1em;
+		font-weight:700;
+		font-size: $small-font-size;
 	}
 }
 
@@ -79,7 +83,7 @@ footer#product-info-display{
 /* =========================================   PRODUCT LIST */
 ul#products{
 	margin:0;
-	padding:100px 0 0 0;
+	padding:$space*3 0 0 0;
 	z-index:2;
 	position:relative;
 	list-style:none;
