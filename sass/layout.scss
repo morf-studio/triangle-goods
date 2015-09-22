@@ -10,22 +10,31 @@ header, footer, section, div, aside{
 	
 }
 h1{
-		line-height:1;
+	line-height:1;
 	}
 div.logo{
 	left:0;
 	width:1.5em;
 	z-index:3;
 	padding:$space/2;
+	&.about-open{
+
+		.icon-triangle{
+			fill:currentColor;
+			color:$white;
+		}
+	}
 }
 div.wordmark{
-	left:4em;
+	left:3em;
+	letter-spacing:-.05em;
 	z-index:1;
 	padding:$space/2;
+	color:$black;
 }
 div.toggle{
 	right:0;
-	z-index:3;
+	z-index:5;
 	width:$space*2;
 	height:$space*2;
 	line-height:$line-height*2;
@@ -33,17 +42,53 @@ div.toggle{
 	margin:$space/2;
 	background-color:$black;
 	text-align:center;
-	@include circle;
+	cursor:pointer;
 	span{
-		font-size:$small-font-size;
+		font-size:1.5em;
 		text-transform: uppercase;
 		font-weight: 600;
+	}
+	&.about-open{
+		background-color:$white;
+		color:$black;
 	}
 }
 
 svg.icon-triangle{
 	width:1em;
 	height:1em;
+}
+
+/* =========================================   SIDEBAR  */
+
+aside#about{
+	position:fixed;
+	top:0;
+	right:-100vw;
+	left:100vw;
+	bottom:0;
+	overflow:scroll;
+	z-index:0;
+	background-color:$black;
+	color:$white;
+	padding:$space/2 $space;
+	@include tenth-sec-trans;
+	opacity:0;
+	h1{
+		margin-bottom:1rem;
+	}
+	p:first-of-type{
+		font-size:1.5em;
+	}
+	a{
+		color:$white;
+	}
+	&.open{
+		right:0;
+		left:0;
+		z-index:4;
+		opacity:1;
+	}
 }
 
 /* =========================================   PRODUCT INFO BAR */
@@ -65,6 +110,7 @@ footer#product-info-display{
 		width:$space*2;
 		height:$space*2;
 		line-height:$line-height*2;
+		@include circle;
 	}
 	.product-link-button{
 		display:block;
