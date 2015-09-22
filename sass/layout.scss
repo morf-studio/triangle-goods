@@ -19,9 +19,11 @@ div.logo{
 	padding:$space/2;
 }
 div.wordmark{
-	left:4em;
+	left:3em;
+	letter-spacing:-.05em;
 	z-index:1;
 	padding:$space/2;
+	color:$black;
 }
 div.toggle{
 	right:0;

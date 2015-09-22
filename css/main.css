@@ -251,9 +251,11 @@ div.logo {
   padding: 0.75em; }
 
 div.wordmark {
-  left: 4em;
+  left: 3em;
+  letter-spacing: -.05em;
   z-index: 1;
-  padding: 0.75em; }
+  padding: 0.75em;
+  color: #000; }
 
 div.toggle {
   right: 0;
