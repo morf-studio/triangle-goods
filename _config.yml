@@ -1,0 +1,11 @@
+# Site settings
+title: Triangle Goods
+email: info@trianglegoods.com
+description: > # this means to ignore newlines until "baseurl:"
+  The Triangle Goods Brand Experience.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter: trianglegoods
+instagram: trianglegoods
+# Build settings
+markdown: kramdown
