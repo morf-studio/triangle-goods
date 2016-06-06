@@ -1,10 +1,28 @@
 // BRAND COLORS
 
-$gold: #BA9F00;
-$gold-lt: #EACF34;
-$blue: #5CB7CC;
-$blue-lt: #A6D0DD;
+$mint: #00FFBC;
+$gold: #FFCE00;
+$warm-white: #F9F7F2;
+$charcoal: #282828;
 
+.primary-color{
+  color:$mint;
+}
+.bg-primary-color{
+  background-color:$mint;
+}
+.secondary-color{
+  color:$gold;
+}
+.bg-secondary-color{
+  background-color:$gold;
+}
+.dark{
+  color:$charcoal;
+}
+.bg-dark{
+  background-color:$charcoal;
+}
 
 // UTILITY COLORS
 $black: #000;
