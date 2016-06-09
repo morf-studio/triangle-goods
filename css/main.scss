@@ -20,7 +20,6 @@ visibility: visible;
   text-shadow:2px 2px 4px $mint;
 }
 
-<<<<<<< HEAD
 // SHAPES
 #circle {
   height: 10rem;
@@ -34,7 +33,7 @@ visibility: visible;
   width: 8rem;
   right: -5rem;
   bottom: -2rem;
-=======
+}
 
 // TETRAHEDRON
 #pyramid {
@@ -216,5 +215,4 @@ visibility: visible;
     -moz-transform:    rotateX(-60deg) rotateY(19.5deg) translateX(-58px) translateY(-100px) translateZ(163px);
     -ms-transform:     rotateX(-60deg) rotateY(19.5deg) translateX(-58px) translateY(-100px) translateZ(163px);
     transform:         rotateX(-60deg) rotateY(19.5deg) translateX(-58px) translateY(-100px) translateZ(163px);
->>>>>>> origin/master
 }
