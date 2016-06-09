@@ -19,3 +19,18 @@ visibility: visible;
 .text-relief{
   text-shadow:2px 2px 4px $mint;
 }
+
+// SHAPES
+#circle {
+  height: 10rem;
+  width: 10rem;
+  left: -6rem;
+  top: -5rem;
+}
+
+#square {
+  height: 8rem;
+  width: 8rem;
+  right: -5rem;
+  bottom: -2rem;
+}
