@@ -1,44 +1,49 @@
 a {
-  transition: all .2s;
-  color:$black;
+  transition: all .15s;
+  color:$dark;
   text-decoration:none;
   font-weight:600;
   border-bottom-style: solid;
   border-bottom-width: $border-width;
-  border-bottom-color:$mint;
+  border-color:$mint;
 //  box-shadow:0 1px 0 0 $black40;
 }
 a:link,
 a:visited{
-    color:$black;
+    //color:$black;
 }
 .link { text-decoration: none; }
 a:hover {
   //padding-bottom:.25rem;
   //box-shadow:0 2px 0 0;
-  border-bottom-width: $border-width-hover;
+  //border-color:$dark;
+  //border-bottom-width: $border-width-hover;
 //  box-shadow:0 2px 0 0 $black40;
 }
 a:active{
-  transition: all .3s;
+  transition: all .15s;
   //color:$b80;
 //  box-shadow:0 2px 0 0 $black;
 }
 a.button{
-  transition: all .25s;
+  transition: all .15s;
   text-decoration:none;
   //color: black;
   padding:$space-s $space-m;
-  border-style: solid;
-  border-width: $border-width;
+  //border-style: solid;
+  border:none;
+//  border-width: $border-width;
   //box-shadow: 0 0 0 2px black;
+  box-shadow:0 0 0 2px $mint;
   padding:$space-s $space-m;
+  background-color:$mint;
   &:hover{
     //background-color:$white10;
-    box-shadow: 0 0 0 4px;
+    //border-width: 4px;
+    box-shadow:0 0 0 4px $mint;
   }
   &:active{
-    background-color:$black10;
+    //background-color:$black10;
     //box-shadow: 0 0 0 4px black;
   }
 }
