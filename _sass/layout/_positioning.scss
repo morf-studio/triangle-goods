@@ -4,6 +4,7 @@
 
 
 //Z Coordinates
+.z-2{ z-index:-2}
 .z-1{ z-index:-1}
 .z1 { z-index:1}
 .z2 { z-index:2}
@@ -25,12 +26,14 @@
 .left-s{  left:$space-s}
 .left-m{  left:$space-m}
 .left-l{  left:$space-l}
+.left-80{ left:80%}
 .left-100{left:100%}
 .right-0{ right:0 }
 .right-s{ right:$space-s}
 .right-m{ right:$space-m}
 .right-l{ right:$space-l}
-.right-100{right:100% }
+.right-80{right:80%}
+.right-100{right:100%}
 
 //Grid Utilities
 .w-10{width:10%;}
