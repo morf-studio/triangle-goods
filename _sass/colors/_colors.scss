@@ -3,7 +3,11 @@
 $mint: #00FFBC;
 $gold: #FFCE00;
 $warm-white: #F9F7F2;
-$charcoal: #282828;
+$dark: #252835;
+
+//#171411
+//#282828
+
 
 .primary-color{
   color:$mint;
@@ -18,10 +22,10 @@ $charcoal: #282828;
   background-color:$gold;
 }
 .dark{
-  color:$charcoal;
+  color:$dark;
 }
 .bg-dark{
-  background-color:$charcoal;
+  background-color:$dark;
 }
 
 // UTILITY COLORS
