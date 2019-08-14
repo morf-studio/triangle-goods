@@ -2,18 +2,19 @@
 
 $mint: #00FFBC;
 $gold: #FFCE00;
+$burnt: #D74E09;
 $warm-white: #F9F7F2;
 $dark: #252835;
-$blue: #393bc6;
+$blue: #124E78;
 //#171411
 //#282828
 
 
 .primary-color{
-  color:$mint;
+  color:$blue;
 }
 .bg-primary-color{
-  background-color:$mint;
+  background-color:$burnt;
 }
 .secondary-color{
   color:$gold;
